@@ -58,6 +58,7 @@ premier_dernier = liste[::len(liste)-1]
 # print(premier_dernier)
 
 # autre methode
+# trie, inversion, index et compte
 employes = ["Maxime", "Martine", "Christopher", "Carlos", "Michael", "Eric"]
 marte = employes.index("Martine") 
 marte = employes.count("Martine")
@@ -66,4 +67,46 @@ employes_trier = sorted(employes) #trie la liste et la retourne dans la liste tr
 # print(employes)
 employes.reverse() #renverse la liste 
 # print(employes_trier)
-print(employes)
+# print(employes)
+# suppression
+# 1. pop() qui enleve un element par rapport à son index mais recupère aussi l'element qui à été rétiré
+#employes.pop(-1) #enlève le dernier element de la liste
+element = employes.pop(-1)
+# print(f" l'élément enlevé est :{element}")
+# 2. clear() qui permet de reunitialiser la liste
+employes.clear()
+# print(employes)
+
+# joindre les elements d'une liste " ".join()
+# plus utiliser pour generer les noms de fichier
+resultat = " ".join(liste)
+resultat = "-".join(liste)
+resultat = "\n".join(liste)
+# print(resultat)
+
+# creer une liste à partir de chaine de caractère avec split()
+# si on met rien en parametre la fonction va spliter sur l'espace, il est toujour important de presiser le param de split
+courses = "riz, pondu, poisson, choux, banane, haricot".split(", ")
+# courses = courses.split(", ")
+print(courses)  
+
+# operateurs d'appartenance in, not in
+if "cuiise" in courses :
+    print(f"le pondu existe bien dans la liste de course : \n{(courses)}")
+else:
+    print(f"la cuisse n'exite pas dans la liste de courses : \n{courses}")
+    courses.append("cuisse")
+    print(f"le pondu vient d'etre ajouté dans la liste de course : \n{courses}")
+
+nom = "Elie Oko"
+ver = "Oko" in nom
+print(ver)
+# exercice
+liste = [1, 2, 3, 4, 5]
+liste.append(6)
+if 6 in liste:
+    print("Le nombre 6 a bien été ajouté à la liste.")
+
+# liste imbriqué
+liste = [1, 2, [3, "Python", 4], 5, 6]
+# print(liste[2][1])
