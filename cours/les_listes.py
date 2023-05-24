@@ -108,5 +108,18 @@ if 6 in liste:
     print("Le nombre 6 a bien été ajouté à la liste.")
 
 # liste imbriqué
-liste = [1, 2, [3, "Python", 4], 5, 6]
-# print(liste[2][1])
+liste = [1, 2, [3, "Python",["Oko", "Agonjo", "Senga"], 4], 5, 6]
+print(liste[2][2][1])
+# exercice
+langages = [["Python", "C++"], "Java"]
+nombres = [1, [4, [2, 3]], 5, [6], [[7]]]
+
+python = langages[0][0]
+deux = nombres[1][1][0]
+sept = nombres[-1][0][0]
+print(f"{python, deux, sept}")
+
+for lis in liste:
+    print(lis)
+
+# https://www.docstring.fr/glossaire/liste/
