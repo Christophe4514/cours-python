@@ -1,5 +1,5 @@
 import sys
-
+# exerice d'application 01
 # https://github.com/DocstringFr/la-formation-complete-python/tree/master/prj-003_la-liste-de-courses/02-solution
 
 # sys.exit()
