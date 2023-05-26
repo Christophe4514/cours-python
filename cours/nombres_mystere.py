@@ -1,5 +1,6 @@
 import random
 from random import randint
+# exercice d'applicatio 02
 
 nombre_a_chercher = randint(0, 100)
 tentatives_restantes = 5
