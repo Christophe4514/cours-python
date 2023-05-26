@@ -3,7 +3,7 @@ import random
 
 sante_ennemi = 50
 sante_joueur = 50
-nombre_de_position = 3
+nombre_de_potion = 3
 saut_de_tour = False
 
 while True:
@@ -20,12 +20,12 @@ while True:
             attaque = random.randint(5, 10)
             sante_ennemi -= attaque
             print(f"Vous avez infligé {attaque} points de dégats à l'ennemi ⚔️")
-        elif choix_utilisateur == "2" and nombre_de_position > 0:  # Potion
+        elif choix_utilisateur == "2" and nombre_de_potion > 0:  # Potion
             sante_position = random.randint(15, 50)
             sante_joueur += sante_position
-            nombre_de_position -= 1
+            nombre_de_potion -= 1
             saut_de_tour = True
-            print(f"Vous récupérez {sante_position} points de vie ❤️ ({nombre_de_position} ? restantes)")
+            print(f"Vous récupérez {sante_position} points de vie ❤️ ({nombre_de_potion} ? restantes)")
         else:
             print("Vous n'avez plus de potions...")
             continue
@@ -36,9 +36,9 @@ while True:
         break
 
     # Attaque de l'ennemi
-    enemy_attack = random.randint(5, 15)
-    sante_joueur -= enemy_attack
-    print(f"L'ennemi vous a infligé {enemy_attack} points de dégats ⚔️")
+    attaque_enemi = random.randint(5, 15)
+    sante_joueur -= attaque_enemi
+    print(f"L'ennemi vous a infligé {attaque_enemi} points de dégats ⚔️")
 
     if sante_joueur <= 0:
         print("Tu as perdu ?")
