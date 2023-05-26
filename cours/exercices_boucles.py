@@ -89,3 +89,7 @@ print(nombres_pairs)
 for i in nombres:
     if i % 2 == 0:
         nombres_pairs.append(i)
+
+# 
+# liste de projet à réaliser pour son portfolio
+# https://www.docstring.fr/blog/10-idees-de-projets-a-realiser-avec-django/
