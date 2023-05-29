@@ -16,3 +16,5 @@ SOURCE_FILLE = Path(__file__).resolve() #qui va nous renvoyer le vrai fichier
 SOURCE_DIR = SOURCE_FILLE.parent
 ROOT_DIR = SOURCE_DIR.parent
 DATA_DIR = SOURCE_DIR / "DATA"
+
+# https://www.docstring.fr/blog/gerer-des-chemins-de-fichiers-avec-pathlib/
