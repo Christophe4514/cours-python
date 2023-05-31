@@ -23,7 +23,7 @@ extensions_a_trier = {".mp3": "Musique",
                       ".xls": "Documents",
                       ".odp": "Documents",
                       ".pages": "Documents"}
-
+# dossier de base à trier
 BASE_DIR = Path.home() / "Tri"
 
 # On récupère tous les fichiers dans le dossier de base
