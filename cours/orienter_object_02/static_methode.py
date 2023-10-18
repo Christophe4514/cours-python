@@ -6,7 +6,7 @@ class Voiture:
         self.vitesse = vitesse
         self.prix = prix
 
-    @classmethod
+    @classmethod #methode de classe
     def lamborghini(cls):
         return cls(marque="Lamborghini", vitesse=250, prix=200000)
 
@@ -14,7 +14,7 @@ class Voiture:
     def porsche(cls):
         return cls(marque="Porsche", vitesse=200, prix=180000)
 
-    @staticmethod
+    @staticmethod #methode static
     def afficher_nombre_voitures():
         print(f"Vous avez {Voiture.voiture_crees} voitures dans votre garage.")
 
