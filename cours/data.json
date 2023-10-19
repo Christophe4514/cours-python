@@ -1,0 +1,11 @@
+{
+    "_default": {
+        "2": {
+            "name": "Pierre",
+            "score": 10,
+            "roles": [
+                "Senior"
+            ]
+        }
+    }
+}

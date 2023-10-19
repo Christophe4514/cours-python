@@ -1,0 +1,27 @@
+{
+    "Users": {
+        "1": {
+            "name": "Patrick",
+            "salary": 2500
+        },
+        "2": {
+            "name": "Paul",
+            "salary": 3500
+        },
+        "3": {
+            "name": "Dani",
+            "salary": 1500
+        }
+    },
+    "Roles": {
+        "1": {
+            "name": "Pythonista"
+        },
+        "2": {
+            "name": "Javaista"
+        },
+        "3": {
+            "name": "JavaScripista"
+        }
+    }
+}
