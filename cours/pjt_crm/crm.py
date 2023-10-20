@@ -65,14 +65,12 @@ class User:
         else:
             return User.DB.insert(self.__dict__)
     
-
 def get_all_user():
     return [User(**user) for user in User.DB.all()]
 
 
 
 if __name__ == "main":
-    
     from faker import Faker
     fake = Faker(locale="fr_FR")
     for _ in range(10):
