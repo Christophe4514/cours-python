@@ -1,4 +1,4 @@
 # print(type(type))
 # a = False - 1
-a = true + false
+a = True + False
 print(a)
