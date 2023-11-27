@@ -16,7 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.views.defaults import server_error
+
+from .views import index
 
 urlpatterns = [
+    ('', index),
     path('admin/', admin.site.urls),
+    # path('bonjour/', server_error),
 ]
